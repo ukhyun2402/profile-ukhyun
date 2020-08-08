@@ -2,8 +2,8 @@ const random = (min, max) => (Math.random() * (max - min))  + min;
 
 const colorList = ['#173F5F', '#20639B', '#3CAEA3', '#F6D55C', '#ED553B'];
 
-for (let i = 0; i < 120; i++) {
-    let size = random(30, 80).toFixed();
+for (let i = 0; i < 80; i++) {
+    let size = random(30, 150).toFixed();
     let alpha = random(0.3, 0.6).toFixed(1);
     let color = random(0, 4).toFixed();
 
@@ -39,4 +39,4 @@ for (let i = 0; i < 120; i++) {
 }
 
 //Wave 애니메이션
-gsap.to('.wave1', {duration: 10, morphSVG: '.wave2', repeat: -1, yoyo:true, ease:'back'});
+gsap.to('.wave-container #wave1', {duration: 100, morphSVG: '#wave2', repeat: -1, yoyo:true, ease:'back'});

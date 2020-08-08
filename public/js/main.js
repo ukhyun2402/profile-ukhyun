@@ -6,8 +6,8 @@ var random = function random(min, max) {
 
 var colorList = ['#173F5F', '#20639B', '#3CAEA3', '#F6D55C', '#ED553B'];
 
-for (var i = 0; i < 120; i++) {
-  var size = random(30, 80).toFixed();
+for (var i = 0; i < 80; i++) {
+  var size = random(30, 150).toFixed();
   var alpha = random(0.3, 0.6).toFixed(1);
   var color = random(0, 4).toFixed();
   var dot = document.createElement('div');
@@ -39,9 +39,9 @@ for (var i = 0; i < 120; i++) {
 } //Wave 애니메이션
 
 
-gsap.to('.wave1', {
-  duration: 10,
-  morphSVG: '.wave2',
+gsap.to('.wave-container #wave1', {
+  duration: 100,
+  morphSVG: '#wave2',
   repeat: -1,
   yoyo: true,
   ease: 'back'
