@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./vue.js"></script>
+
+    <title>Document</title>
+    <style>
+        .demo {
+            width: 100px;
+            height: 100px;
+            background-color: grey;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="demo" @click='applyRed = !applyRed' :class='divClassed'></div>
+        <div class="demo" :class='{red: applyRed}'></div>
+        <div class="demo" :style='{backgroundColor: this.color}'></div>
+        <hr>
+        <input type="text" v-model="color">
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

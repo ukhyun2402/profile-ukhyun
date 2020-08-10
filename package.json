@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ./src/index.js --ext hbs,js,scss --ignore pulbic",
+    "dev": "nodemon ./src/index.js --ext hbs,js,scss",
     "build:scss": "node-sass-chokidar ./src/scss/ -o ./public/css --watch",
     "build:js": "npx babel --watch ./src/js -d public/js"
   },
