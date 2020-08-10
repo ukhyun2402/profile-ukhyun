@@ -4,6 +4,9 @@
   box-sizing: border-box;
   color: white; }
 
+input, button {
+  color: black; }
+
 body {
   overflow-x: hidden; }
 
@@ -57,22 +60,23 @@ header .wave-container {
   header .wave-container path {
     fill: #222; }
 
-section .wave-container:nth-child(4n-2) {
+section .wave-container:nth-of-type(4n-2) {
   background-color: #222; }
-  section .wave-container:nth-child(4n-2) path {
+  section .wave-container:nth-of-type(4n-2) path {
     fill: black; }
 
-section .wave-container:nth-child(4n) {
+section .wave-container:nth-of-type(4n) {
   background-color: black; }
-  section .wave-container:nth-child(4n) path {
+  section .wave-container:nth-of-type(4n) path {
     fill: #222; }
 
 section .card {
   width: 100%;
-  height: 500px; }
+  height: 500px;
+  color: white; }
 
-section .card1 {
+section #card1 {
   background-color: black; }
 
-section .card2 {
+section #card2 {
   background-color: #222; }

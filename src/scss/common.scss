@@ -4,6 +4,9 @@
   box-sizing: border-box;
   color:white;
 }
+input, button{
+  color: black;
+}
 @mixin flex() {
     display: -webkit-box;
     display: -moz-box;
